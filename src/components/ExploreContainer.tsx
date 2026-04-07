@@ -1,12 +1,25 @@
-import './ExploreContainer.css';
+import "./ExploreContainer.css";
+import {
+  IonAlert,
+  IonButton,
+  IonCheckbox,
+  IonItem,
+  IonLabel,
+} from "@ionic/react";
 
-interface ContainerProps { }
+interface ContainerProps {}
 
 const ExploreContainer: React.FC<ContainerProps> = () => {
   return (
     <div id="container">
-      <strong>Ready to create an app?</strong>
-      <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+      <IonButton id="present-alert">Click Me</IonButton>
+      <IonAlert
+        trigger="present-alert"
+        header="A Short Title Is Best"
+        subHeader="A Sub Header Is Optional"
+        message="A message should be a short, complete sentence."
+        buttons={["Action"]}
+      ></IonAlert>
     </div>
   );
 };
