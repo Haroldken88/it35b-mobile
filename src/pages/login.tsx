@@ -19,13 +19,13 @@ const Home: React.FC = () => {
           <IonButtons slot="start">
             <IonMenuButton></IonMenuButton>
           </IonButtons>
-          <IonTitle>Blank</IonTitle>
+          <IonTitle>HOME</IonTitle>
         </IonToolbar>
       </IonHeader>
       <IonContent fullscreen>
         <IonHeader collapse="condense">
           <IonToolbar>
-            <IonTitle size="large">Blank</IonTitle>
+            <IonTitle size="large">HOME</IonTitle>
           </IonToolbar>
         </IonHeader>
         <ExploreContainer />
@@ -34,4 +34,4 @@ const Home: React.FC = () => {
   );
 };
 
-export default Home;
+export default Home
